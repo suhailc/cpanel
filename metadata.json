@@ -1,0 +1,14 @@
+{
+  "name": "suhailc-cpanel",
+  "version": "0.1.0",
+  "author": "Suhail Choudhury",
+  "summary": "Puppet module for managing Cpanel/WHM servers",
+  "license": "Apache 2.0",
+  "source": "https://github.com/suhailc/cpanel",
+  "project_page": "https://github.com/suhailc/cpanel",
+  "issues_url": "https://github.com/suhailc/cpanel/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
