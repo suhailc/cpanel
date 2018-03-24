@@ -4,8 +4,6 @@
 class cpanel::fix_hostname_to_fqdn (
 ) {
 
-  requires cpanel::install
-
   exec { 'fix_hostname_to_fqdn':
     command => "/usr/local/cpanel/bin/set_hostname ${fqdn}",
     unless  => "/usr/bin/hostname -eq ${fqdn}",
