@@ -7,7 +7,7 @@ class cpanel::install_dnsonly {
 
   exec { 'install_cpanel':
     cwd     => '/home',
-    command => 'curl -o latest-dnsonly -L https://securedownloads.cpanel.net/latest-dnsonly && /bin/sh latest-dnsonly',
+    command => '/usr/bin/curl -o latest-dnsonly -L https://securedownloads.cpanel.net/latest-dnsonly && /bin/sh latest-dnsonly',
     timeout => 0,
     creates => '/usr/local/cpanel'
   }
