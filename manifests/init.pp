@@ -41,3 +41,9 @@ include cpanel::install
 include cpanel::fix_hostname_to_fqdn
 
 }
+
+class cpanel_dnsonly {
+
+include cpanel::install_dnsonly
+
+}
