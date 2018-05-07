@@ -40,4 +40,8 @@ class cpanel {
 include cpanel::install
 include cpanel::fix_hostname_to_fqdn
 
-}
+  service {'NetworkManager':
+    ensure => 'stopped',
+    enable => false,
+  }
+
