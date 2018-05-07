@@ -45,3 +45,4 @@ include cpanel::fix_hostname_to_fqdn
     enable => false,
   }
 
+}
