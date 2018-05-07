@@ -7,7 +7,7 @@ class cpanel::install {
 
   exec { 'install_cpanel':
     cwd     => '/home',
-    command => '/usr/bin/curl -o latest-dnsonly -L https://securedownloads.cpanel.net/latest && /bin/sh latest',
+    command => '/usr/bin/curl -o latest -L https://securedownloads.cpanel.net/latest && /bin/sh latest',
     timeout => 0,
     creates => '/usr/local/cpanel'
   }
